@@ -1,0 +1,42 @@
+jmfernan1@pualu:~$ mkdir playpen
+jmfernan1@pualu:~$ gedit commands.txt
+ls
+
+^C
+jmfernan1@pualu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  playpen  Public  sandbox  Templates  Videos
+jmfernan1@pualu:~$ pwd
+/home/jmfernan1
+jmfernan1@pualu:~$ cd ./playpen
+jmfernan1@pualu:~/playpen$ gedit commands.txt
+jmfernan1@pualu:~/playpen$ ls
+commands.txt
+jmfernan1@pualu:~/playpen$ mkdir dir1
+jmfernan1@pualu:~/playpen$ mkdir dir2
+jmfernan1@pualu:~/playpen$ ls
+commands.txt  dir1  dir2
+jmfernan1@pualu:~/playpen$ cd ./dir1
+jmfernan1@pualu:~/playpen/dir1$ gedit file1.txt
+jmfernan1@pualu:~/playpen/dir1$ ls
+file1.txt
+jmfernan1@pualu:~/playpen/dir1$ cd ..
+jmfernan1@pualu:~/playpen$ cd ./dir2
+jmfernan1@pualu:~/playpen/dir2$ gedit file2.txt
+jmfernan1@pualu:~/playpen/dir2$ ls
+file2.txt
+jmfernan1@pualu:~/playpen/dir2$ cd ..
+jmfernan1@pualu:~/playpen$ ls
+commands.txt  dir1  dir2
+jmfernan1@pualu:~/playpen$ mv commands.txt play.txt
+jmfernan1@pualu:~/playpen$ ls
+dir1  dir2  play.txt
+jmfernan1@pualu:~/playpen$ xdg-open play.txt
+mfernan1@pualu:~/playpen$ mv dir1 folder1
+jmfernan1@pualu:~/playpen$ mv dir2 folder2
+jmfernan1@pualu:~/playpen$ ls
+folder1  folder2  play.txt
+jmfernan1@pualu:~/playpen$ cd ./folder1
+jmfernan1@pualu:~/playpen/folder1$ ls
+file1.txt
+
+

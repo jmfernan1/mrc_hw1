@@ -1,0 +1,31 @@
+jmfernan1@pualu:~$ mkdir sandbox
+jmfernan1@pualu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  sandbox  Templates  Videos
+jmfernan1@pualu:~$ cd /home/jmfernan1/sandbox
+jmfernan1@pualu:~/sandbox$ mkdir dir1
+jmfernan1@pualu:~/sandbox$ mkdir dir2
+mfernan1@pualu:~/sandbox$ ls
+dir1  dir2
+jmfernan1@pualu:~/sandbox$ cd ..
+jmfernan1@pualu:~$ gedit commands.txt
+jmfernan1@pualu:~$ cd ./sandbox
+jmfernan1@pualu:~/sandbox$ ls
+dir1  dir2
+jmfernan1@pualu:~/sandbox$ cd ..
+jmfernan1@pualu:~$ ls
+commands.txt  Desktop  Documents  Downloads  Music  Pictures  Public  sandbox  Templates  Videos
+jmfernan1@pualu:~$ mv commands.txt sandbox
+jmfernan1@pualu:~$ cd ./sandbox
+jmfernan1@pualu:~/sandbox$ ls
+commands.txt  dir1  dir2
+jmfernan1@pualu:~/sandbox$ cd ./dir1
+jmfernan1@pualu:~/sandbox/dir1$ gedit file1.txt
+jmfernan1@pualu:~/sandbox/dir1$ cd ..
+jmfernan1@pualu:~/sandbox$ ls
+commands.txt  dir1  dir2
+jmfernan1@pualu:~/sandbox$ cd ./dir2
+jmfernan1@pualu:~/sandbox/dir2$ gedit file2.txt
+jmfernan1@pualu:~/sandbox/dir2$ ls
+file2.txt
+jmfernan1@pualu:~/sandbox$ xdg-open commands.txt
+
